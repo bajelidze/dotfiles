@@ -30,7 +30,7 @@ edit = [
 	{ run = 'code "%*"',          orphan = true, for = "windows" },
 ]
 open = [
-	{ run = 'xdg-open "$@"',                desc = "Open", for = "linux" },
+	{ run = 'xdg-open "$@"', orphan = true, desc = "Open", for = "linux" },
 	{ run = 'open "$@"',                    desc = "Open", for = "macos" },
 	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" }
 ]
@@ -130,7 +130,6 @@ cd_origin = "top-center"
 cd_offset = [ 0, 2, 50, 3 ]
 
 # create
-create_title  = "Create:"
 create_origin = "top-center"
 create_offset = [ 0, 2, 50, 3 ]
 

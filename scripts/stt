@@ -6,4 +6,4 @@ if [[ "$XCWD" == "/" ]]; then
     XCWD=~
 fi
 
-st -d "$XCWD"
+st -d "$XCWD" "$@"

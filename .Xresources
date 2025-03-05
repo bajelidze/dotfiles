@@ -43,7 +43,7 @@ URxvt.keyboard-select.clipboard: true
 ! URxvt.transparent: true
 ! URxvt.shading: 10
 
-Xft.dpi: 96
+Xft.dpi: 112
 Xft.autohint: false
 Xft.antialias: true
 Xft.hinting: true
@@ -52,4 +52,4 @@ Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
 Xcursor.theme: cursor-theme
-Xcursor.size: 24
+Xcursor.size: 41

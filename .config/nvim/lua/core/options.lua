@@ -26,6 +26,9 @@ opt.shiftwidth = 4
 opt.smartindent = true
 opt.expandtab = true
 
+-- Opt locals
+opt_local.cinkeys:remove(':')
+
 -- Performance
 
 -- Disable builtin plugins

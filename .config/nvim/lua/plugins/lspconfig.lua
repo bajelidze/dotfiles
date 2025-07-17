@@ -1,5 +1,6 @@
 local function config()
     local lspconfig = require('lspconfig')
+    local util = require('lspconfig.util')
     local servers = {
         'efm',
         'clangd',
@@ -9,9 +10,10 @@ local function config()
         'lua_ls',
         'gopls',
         'golangci_lint_ls',
-        'pylsp',
+        'pyright',
         'yamlls',
         'jsonls',
+        'cmake',
     }
 
     local servers_autofmt = {
@@ -111,6 +113,10 @@ local function config()
                     gofumpt = true,
                 },
             }
+        elseif server == "golangci_lint_ls" then
+            opts.root_dir = function(fname)
+                return util.root_pattern('go.mod')(fname)
+            end
         end
 
         for _, server_autofmt in ipairs(servers_autofmt) do

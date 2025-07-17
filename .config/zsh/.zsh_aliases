@@ -25,3 +25,5 @@ alias zathura='devour zathura'
 alias evince='devour evince'
 alias slack='flatpak run --filesystem=home:ro com.slack.Slack'
 alias obs='~/.local/share/flatpak/exports/bin/com.obsproject.Studio'
+
+alias rsync='rsync -avz --exclude=.git --exclude=.build'

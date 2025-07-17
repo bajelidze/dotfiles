@@ -70,8 +70,8 @@ require('lazy').setup({
             opts = {
                 ensure_installed = {
                     'clangd', 'efm', 'lua_ls',
-                    'pylsp', 'gopls', 'yamlls',
-                    'jsonls',
+                    'pyright', 'gopls', 'yamlls',
+                    'jsonls', 'cmake', 'golangci_lint_ls',
                 }
             },
         },
@@ -127,6 +127,20 @@ require('lazy').setup({
                 'nvim-lua/plenary.nvim',
                 'nvim-lua/popup.nvim',
                 'nvim-tree/nvim-web-devicons',
+            },
+            opts = {
+                pickers = {
+                    find_files = {
+                        file_ignore_patterns = { 'node_modules', '.git', '.venv', '.build' },
+                        hidden = true,
+                    },
+                    live_grep = {
+                        file_ignore_patterns = { 'node_modules', '.git', '.venv', '.build' },
+                        additional_args = function(_)
+                            return { "--hidden" }
+                        end,
+                    },
+                },
             },
         },
 

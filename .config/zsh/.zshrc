@@ -48,7 +48,9 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 source $HOME/.config/zsh/.zsh_aliases
 source $HOME/.config/zsh/.zsh_binds
 
-source $HOME/.ccc/saas_helpers
+# source $HOME/.ccc/saas_helpers
 
 export FZF_DEFAULT_OPTS='--layout reverse --height 40%'
 export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window up:3:hidden:wrap --bind 'ctrl-/:toggle-preview' --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort' --color header:italic --header 'Press CTRL-Y to copy command into clipboard'"
+
+source $HOME/.zshenv

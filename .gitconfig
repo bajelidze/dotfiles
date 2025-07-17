@@ -13,6 +13,8 @@
     signingkey = 1D4A6EDE86457C3C
 [commit]
     gpgsign = false
+[push]
+    default = current
 [init]
     defaultBranch = master
 [credential]
@@ -22,3 +24,7 @@
     insteadOf = "http://github.com/exasol/"
     insteadOf = "git://github.com/exasol/"
     insteadOf = "gh:"
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[url "https://github.com/"]
+	insteadOf = https://api.github.com/repos/

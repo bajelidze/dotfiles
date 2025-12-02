@@ -39,3 +39,4 @@ export INFOPATH=$INFOPATH:/home/ib/.linuxbrew/share/info
 # export CPLUS_INCLUDE_PATH=:$HOME/.linuxbrew/include:$HOME/.ccc/x/u/branchr/runtime+bm.runtime-8.8-576f821c-64r/install/opt/exasol/runtime-8.8.0/include
 
 export TEXINPUTS=$HOME/.local/share/texmf:
+export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"

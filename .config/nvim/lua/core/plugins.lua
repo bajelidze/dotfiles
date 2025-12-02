@@ -71,7 +71,8 @@ require('lazy').setup({
                 ensure_installed = {
                     'clangd', 'efm', 'lua_ls',
                     'pyright', 'gopls', 'yamlls',
-                    'jsonls', 'cmake', 'golangci_lint_ls',
+                    'jsonls', 'cmake', --'golangci_lint_ls',
+                    'ruff', 'ts_ls',
                 }
             },
         },

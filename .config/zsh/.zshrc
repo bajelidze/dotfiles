@@ -39,6 +39,7 @@ bindkey -v '^?' backward-delete-char
 
 source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.config/zsh/plugins/fzf.zsh
+source $HOME/.config/zsh/tasks.zsh
 
 # Disable directory underlining
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES

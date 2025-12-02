@@ -4,16 +4,17 @@ local function config()
     local servers = {
         'efm',
         'clangd',
-        'tsserver',
+        'ts_ls',
         'eslint',
-        'volar',
+        -- 'volar',
         'lua_ls',
-        'gopls',
+        -- 'gopls',
         'golangci_lint_ls',
-        'pyright',
+        -- 'pyright',
         'yamlls',
         'jsonls',
         'cmake',
+        'ruff',
     }
 
     local servers_autofmt = {

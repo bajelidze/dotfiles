@@ -1,0 +1,172 @@
+{
+    "[go]": {
+        "editor.defaultFormatter": "nuclide.go"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[starlark]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[starlark-skycastle]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[java]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[kotlin]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[objective-c]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.cpp"
+    },
+    "[proto]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[hack]": {
+        "editor.defaultFormatter": "nuclide.hack"
+    },
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[c]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[cuda-cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[tcc-cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[objective-cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[rust]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "meta.global.history.enabled": true,
+    "[blueprint]": {
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[swift]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "[ocaml]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "nuclide.arclint"
+    },
+    "accessibility.openChatEditedFiles": false,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "extensions.experimental.deferredStartupFinishedActivation": true,
+    "terminal.integrated.systemd.shouldUse": true,
+    "window.restoreWindows": "none",
+    "editor.lightbulb.enabled": "on",
+    "fb.ms-remote-connections.odtypes": [
+        {
+            "type": "ondemand_www",
+            "flavor": "default",
+            "folders": []
+        },
+        {
+            "type": "ondemand_fbcode",
+            "flavor": "default",
+            "folders": []
+        }
+    ],
+    "window.title": "${devmate:status}${separator}${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "emmet.showAbbreviationSuggestions": false,
+    "emmet.showExpandedAbbreviation": "never",
+    "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
+    "wasabi.interactiveDevelopment.introMessageNumTimesShown": 3,
+    "wasabi.interactiveDevelopment.disableIntroMessage": true,
+    "blame.disableInlineBlame": true,
+    "editor.minimap.enabled": false,
+    "python-debugger.suppressFeedbackPane": true,
+    "workbench.startupEditor": "none",
+    "editor.fontFamily": "'Consolas NF', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontSize": 16,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "devmate.sidebar.open-on-startup": false,
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "c",
+        "d",
+        "h",
+        "j",
+        "l",
+        "u",
+        "m",
+        "r",
+        "t",
+        "v",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete",
+        "f"
+    ],
+    "window.customMenuBarAltFocus": false,
+    "vscode-neovim.ctrlKeysForInsertMode": [
+        "a",
+        "c",
+        "d",
+        "h",
+        "j",
+        "m",
+        "r",
+        "t",
+        "u",
+        "w",
+        "f"
+    ],
+    "fb.openInteractiveSmartlogAfterMountingOnDemand": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "chat.commandCenter.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.occurrencesHighlight": "off",
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBorder": "#0000"
+    },
+    "editor.cursorBlinking": "solid",
+    "devmate.assertiveness.assistanceLevel": "Minimal",
+    "editor.inlineSuggest.allowSuggestOnTriggerCharacters": true,
+    // Hide title bar
+    "window.titleBarStyle": "native",
+    "window.menuBarVisibility": "compact",
+    "window.customTitleBarVisibility": "never",
+    "window.menuStyle": "custom",
+    // End
+    "editor.selectionHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "workbench.activityBar.location": "hidden",
+    "editor.guides.indentation": false,
+    "workbench.editor.showTabIndex": true
+    // "workbench.editor.showTabs": "single"
+}

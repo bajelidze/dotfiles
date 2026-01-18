@@ -18,4 +18,3 @@ bin:
 uninstall:
 	rm ${BINDIR}/dwm.tmux
 	rm ${LIBDIR}/dwm.tmux
-

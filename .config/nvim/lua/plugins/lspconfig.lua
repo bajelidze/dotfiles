@@ -9,11 +9,11 @@ local function config()
         -- 'volar',
         'lua_ls',
         -- 'gopls',
-        'golangci_lint_ls',
+        -- 'golangci_lint_ls',
         -- 'pyright',
         'yamlls',
         'jsonls',
-        'cmake',
+        -- 'cmake',
         'ruff',
     }
 

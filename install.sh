@@ -2,7 +2,6 @@
 
 SCRIPT_DEST_DIR="/usr/local/bin"
 
-# Usage: make_home_symlink path_to_file name_of_file_in_home_to_symlink_to
 make_home_symlink() {
     if [ -z "$1" ]; then
         >&2 echo "make_home_symlink: missing first argument: path to file"
@@ -34,24 +33,7 @@ make_home_symlink() {
     fi
 
     ln -s "$THIS_DOTFILE_PATH" "$HOME_DOTFILE_PATH" 2>/dev/null
-    echo "Done"
-}
-
-make_script_symlink() {
-    local -a scripts=("scripts/"*)
-
-    for script in "${scripts[@]}"; do
-        src="$PWD/$script"
-        dest="$SCRIPT_DEST_DIR/${script/scripts\/}"
-        echo "Installing $src into $dest"
-        sudo ln -s "$src" "$dest"
-    done
-}
-
-install_gitmux() {
-	which gitmux && return
-
-	go get -u github.com/arl/gitmux
+    echo ": Done"
 }
 
 mkdir -p "$HOME/.cache/zsh"
@@ -64,15 +46,14 @@ dotfiles=(
    .config/zsh
    .config/nvim
    .config/mpv
-   .config/lf
-   .config/.gitmux.conf
-   .config/alacritty
-   .config/ncspot
+   .config/mango
+   .config/waybar
+   .config/foot
+   .config/rofi
+   '.config/VS Code @ FB/User/keybindings.json'
+   '.config/VS Code @ FB/User/settings.json'
 )
 
 for dotfile in "${dotfiles[@]}"; do
     make_home_symlink "$dotfile"
 done
-
-install_gitmux
-# make_script_symlink

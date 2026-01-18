@@ -9,8 +9,7 @@
     wt = worktree
 [user]
     name = bajelidze
-    email = irakli.bajelidze@exasol.com
-    signingkey = 1D4A6EDE86457C3C
+    email = nflashy1@gmail.com
 [commit]
     gpgsign = false
 [push]
@@ -19,12 +18,5 @@
     defaultBranch = master
 [credential]
     helper = store
-[url "git@github.com:exasol/"]
-    insteadOf = "https://github.com/exasol/"
-    insteadOf = "http://github.com/exasol/"
-    insteadOf = "git://github.com/exasol/"
-    insteadOf = "gh:"
 [url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
-[url "https://github.com/"]
-	insteadOf = https://api.github.com/repos/
+    insteadOf = https://github.com/

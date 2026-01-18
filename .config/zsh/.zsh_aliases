@@ -14,16 +14,7 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias t='tmux'
 
-alias dcrm='docker rm $(docker ps -qa) -fv'
-alias dp='docker ps -a'
-alias dcrmi='docker images | grep none | awk "{ print $3; }" | xargs docker rmi'
-
 alias cdd='cd ~/Downloads'
 alias cdD='cd ~/Desktop'
-
-alias zathura='devour zathura'
-alias evince='devour evince'
-alias slack='flatpak run --filesystem=home:ro com.slack.Slack'
-alias obs='~/.local/share/flatpak/exports/bin/com.obsproject.Studio'
 
 alias rsync='rsync -avz --exclude=.git --exclude=.build'

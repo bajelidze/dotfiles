@@ -1,0 +1,158 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "code-compose.show-inline-chat",
+        "when": "code-compose.isInlineChatEnabled && editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-code-compose.show-inline-chat",
+        "when": "code-compose.isInlineChatEnabled && editorTextFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "code-compose.chat.toggle",
+        "when": "code-compose.isLoaded"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-code-compose.chat.toggle",
+        "when": "code-compose.isLoaded"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "fb-hg.toggle-interactive-smartlog"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-fb-hg.toggle-interactive-smartlog"
+    },
+    {
+        "key": "-",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert.q && neovim.init && neovim.mode == 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+        "key": "ctrl+q",
+        "command": "-vscode-neovim.send",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert.q && neovim.init && neovim.mode == 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+        "key": "ctrl+w q",
+        "command": "-workbench.action.closeActiveEditor",
+        "when": "!editorTextFocus && !filesExplorerFocus && !searchViewletFocus && !terminalFocus && neovim.mode != 'cmdline'"
+    },
+    {
+        "key": "ctrl+k ctrl+w",
+        "command": "-workbench.action.closeAllEditors"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+w",
+        "command": "-workbench.action.closeAllGroups"
+    },
+    {
+        "key": "ctrl+k w",
+        "command": "-workbench.action.closeEditorsInGroup"
+    },
+    {
+        "key": "ctrl+shift+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-vscode-neovim.send-cmdline",
+        "when": "neovim.init && neovim.mode == 'cmdline'"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-vscode-neovim.send",
+        "when": "editorTextFocus && neovim.ctrlKeysNormal.w && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-vscode-neovim.send",
+        "when": "editorTextFocus && neovim.ctrlKeysInsert.w && neovim.init && neovim.mode == 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "neovim.init && neovim.mode == 'normal'"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "ctrl+k ctrl+\\",
+        "command": "-workbench.action.splitEditorDown"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "editor.action.quickFix"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.goToReferences"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "nuclide-biggrep:quick-search"
+    },
+    {
+        "key": "ctrl+alt+g",
+        "command": "-nuclide-biggrep:quick-search"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "copyFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+alt+c",
+        "command": "-copyFilePath",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.action.files.openFileFolder",
+        "when": "isMacNative && openFolderWorkspaceSupport"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFileFolder",
+        "when": "isMacNative && openFolderWorkspaceSupport"
+    },
+]

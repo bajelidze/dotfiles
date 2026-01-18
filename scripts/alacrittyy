@@ -1,9 +1,0 @@
-#!/bin/bash
-
-XCWD="$(xcwd)"
-
-if [[ "$XCWD" == "/" ]]; then
-    XCWD=~
-fi
-
-alacritty --working-directory "$(xcwd)"

@@ -2,14 +2,14 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
-[manager]
+[mgr]
 ratio          = [ 1, 4, 3 ]
 sort_by        = "alphabetical"
 sort_sensitive = false
 sort_reverse   = false
-sort_dir_first = false
+sort_dir_first = true
 linemode       = "none"
-show_hidden    = false
+show_hidden    = true
 show_symlink   = true
 scrolloff      = 5
 
@@ -17,7 +17,7 @@ scrolloff      = 5
 tab_size        = 2
 max_width       = 3000
 max_height      = 3000
-cache_dir       = ""
+cache_dir       = "~/.cache/yazi"
 image_filter    = "triangle"
 image_quality   = 90
 sixel_fraction  = 15
@@ -80,7 +80,7 @@ macro_workers    = 25
 bizarre_retry    = 5
 image_alloc      = 536870912  # 512MB
 image_bound      = [ 0, 0 ]
-suppress_preload = false
+suppress_preload = true
 
 [plugin]
 

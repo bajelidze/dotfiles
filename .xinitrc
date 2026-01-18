@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# picom &
+picom &
 dwmblocks &
 dunst &
 nm-applet &
@@ -8,8 +8,8 @@ clipit -n &
 xclip &
 xrdb "$HOME/.Xresources"
 
-eval $(gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gcr/ssh"
+export XDG_SESSION_TYPE=x11
 
 pasystray &
 

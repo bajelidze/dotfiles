@@ -1,4 +1,4 @@
-set previewer ~/.config/lf/preview
+set previewer ~/.config/lf/previewer
 set cleaner ~/.config/lf/cleaner
 set shell sh
 set drawbox
@@ -9,7 +9,8 @@ set scrolloff 10
 set period 1
 
 # use enter for shell commands
-# map <enter> open
+map <enter> open
+map o open
 
 map X !$f
 map x extract

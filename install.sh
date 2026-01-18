@@ -81,6 +81,10 @@ dotfiles=(
     ".wegorc"
     ".gitconfig"
     ".xinitrc"
+    ".config/foot"
+    ".config/waybar"
+    ".config/mango"
+    ".config/rofi"
 )
 
 for dotfile in "${dotfiles[@]}"; do

@@ -17,7 +17,7 @@ alias .....='cd ../../../../'
 alias se='sudoedit'
 alias j='jobs'
 alias t='tmux'
-alias dragon='dragon-drag-and-drop -x'
+alias dragon='dragon-drop'
 alias cal='cal -m'
 
 # Butthead direct login

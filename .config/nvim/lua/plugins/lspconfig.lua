@@ -10,6 +10,7 @@ local function config()
         'gopls',
         'golangci_lint_ls',
         'pylsp',
+        'rust_analyzer',
     }
 
     local servers_autofmt = {

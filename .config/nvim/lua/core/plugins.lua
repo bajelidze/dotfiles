@@ -69,7 +69,7 @@ require('lazy').setup({
             config = true,
             opts = {
                 ensure_installed = {
-                    'clangd', 'efm', 'lua_ls', 'pylsp', 'gopls',
+                    'clangd', 'efm', 'lua_ls', 'pyright', 'gopls', 'ts_ls', 'rust_analyzer',
                 }
             },
         },
@@ -105,11 +105,12 @@ require('lazy').setup({
                     'lua', 'python', 'go', 'rust', 'vim', 'csv', 'xml',
                     'git_config', 'git_rebase', 'gitcommit', 'gitignore',
                     'gitattributes', 'gomod', 'gosum', 'haskell', 'jq',
-                    'latex', 'make', 'markdown', 'markdown_inline', 'ninja',
+                    'make', 'markdown', 'markdown_inline', 'ninja',
                     'sql', 'ssh_config', 'terraform',
                 },
                 sync_install = false,
                 highlight = { enable = true },
+                indent = { enable = true },
             },
             config = function(_, opts)
                 require('nvim-treesitter.configs').setup(opts)

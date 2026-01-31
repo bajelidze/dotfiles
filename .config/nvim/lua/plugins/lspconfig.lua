@@ -3,13 +3,14 @@ local function config()
     local servers = {
         'efm',
         'clangd',
-        'tsserver',
+        'ts_ls',
         'eslint',
         'volar',
         'lua_ls',
         'gopls',
         'golangci_lint_ls',
-        'pylsp',
+        'pyright',
+        'rust_analyzer',
     }
 
     local servers_autofmt = {
@@ -82,6 +83,11 @@ local function config()
             opts.filetypes = {
                 'typescript', 'javascript', 'javascriptreact',
                 'typescriptreact', 'vue', 'json',
+            }
+            opts.init_options = {
+                vue = {
+                    hybridMode = false,
+                },
             }
         elseif server == 'lua_ls' then
             opts.on_init = function(client)

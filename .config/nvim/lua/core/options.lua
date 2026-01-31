@@ -25,6 +25,8 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.smartindent = true
 opt.expandtab = true
+opt_local.cinkeys:remove(':')
+opt_local.indentkeys:remove(':')
 
 -- Performance
 
@@ -70,6 +72,7 @@ vim.api.nvim_create_autocmd('FileType', {
         'vue',
         'typescript',
         'javascript',
+        'markdown',
     },
     callback = function()
         opt_local.tabstop = 2
@@ -86,3 +89,5 @@ vim.api.nvim_create_autocmd('FileType', {
         opt_local.expandtab = false
     end,
 })
+
+vim.diagnostic.config({ virtual_text = true })

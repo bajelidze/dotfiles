@@ -44,8 +44,6 @@ map('n', '<F6>', ':setlocal spell! spelllang=en_us<CR>')
 map('n', '<F7>', ':set nowrap!<CR>')
 
 -- Plugins
-map('n', '<C-_>', '<plug>NERDCommenterToggle')
-
 map('n', 'ff', '<cmd>Telescope find_files<cr>')
 map('n', 'fg', '<cmd>Telescope live_grep<cr>')
 

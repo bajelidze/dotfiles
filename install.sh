@@ -50,12 +50,6 @@ make_script_symlink() {
     done
 }
 
-install_gitmux() {
-	which gitmux && return
-
-	go get -u github.com/arl/gitmux
-}
-
 mkdir -p "$HOME/.cache/zsh"
 
 dotfiles=(
@@ -71,8 +65,11 @@ dotfiles=(
     ".config/picom.conf"
     ".config/ranger"
     ".config/mpv"
-    ".config/.gitmux.conf"
     ".config/mimeapps.list"
+    ".config/foot"
+    ".config/waybar"
+    ".config/rofi"
+    ".config/mango"
     ".tmux.conf"
     ".zshenv"
     ".Xresources"
@@ -85,8 +82,6 @@ dotfiles=(
 for dotfile in "${dotfiles[@]}"; do
     make_home_symlink "$dotfile"
 done
-
-install_gitmux
 
 sudo ln -s "$HOME/.config/lf/lfrun" "/usr/local/bin" 2> /dev/null
 make_script_symlink

@@ -2,12 +2,12 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
-[mgr]
+[manager]
 ratio          = [ 1, 4, 3 ]
-sort_by        = "natural"
+sort_by        = "alphabetical"
 sort_sensitive = false
 sort_reverse   = false
-sort_dir_first = true
+sort_dir_first = false
 linemode       = "none"
 show_hidden    = false
 show_symlink   = true

@@ -1,11 +1,11 @@
 [alias]
-gt = goto
-ci = commit
-df = diff
-am = amend
-ph = push
+s = status
+g = goto
+c = commit
+d = diff
+a = amend
 head = log -r . -T '{node|short} {desc|firstline} {phabricator_diff_id}\n'
-hd = head
+h = head
 
 [ui]
 username = Irakli Bajelidze <bajelidze@fb.com>

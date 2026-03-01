@@ -42,6 +42,7 @@ dotfiles=(
    .bashrc
    .zshenv
    .gitconfig
+   .hgrc
    .tmux.conf
    .config/zsh
    .config/nvim

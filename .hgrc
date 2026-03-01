@@ -1,0 +1,14 @@
+[alias]
+gt = goto
+ci = commit
+df = diff
+am = amend
+ph = push
+head = log -r . -T '{node|short} {desc|firstline} {phabricator_diff_id}\n'
+hd = head
+
+[ui]
+username = Irakli Bajelidze <bajelidze@fb.com>
+
+[isl]
+submitAsDraft = true

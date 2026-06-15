@@ -49,14 +49,14 @@ window#waybar {
 #disk,
 #network,
 #temperature,
-#pulseaudio {
+#pulseaudio,
+#backlight {
     padding: 0 2px;
-    color: @mag;
+    color: @cyn;
 }
 
 #tray {
     padding: 0 6px 0 0;
-    color: @mag;
 }
 
 #power-profiles-daemon {
@@ -65,14 +65,6 @@ window#waybar {
 
 #custom-sep {
     color: @brblk;
-}
-
-#clock {
-    color: @cyn;
-}
-
-#battery {
-    color: @mag;
 }
 
 #disk {

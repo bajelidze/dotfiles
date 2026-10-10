@@ -15,6 +15,8 @@
     "modules-right": [
         // "idle_inhibitor",
         // "network",
+        // "custom/vpn",
+        // "custom/sep",
         "temperature",
         "custom/sep",
         "backlight",
@@ -186,6 +188,13 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/vpn": {
+        "exec": "$HOME/.config/waybar/vpn.sh status",
+        "return-type": "json",
+        "interval": 10,
+        "signal": 8,
+        "on-click": "$HOME/.config/waybar/vpn.sh toggle; pkill -RTMIN+8 waybar"
     },
     "custom/power": {
         "format" : "⏻ ",

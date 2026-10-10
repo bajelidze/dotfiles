@@ -50,6 +50,7 @@ window#waybar {
 #network,
 #temperature,
 #pulseaudio,
+#custom-vpn,
 #backlight {
     padding: 0 2px;
     color: @cyn;
@@ -84,6 +85,15 @@ window#waybar {
 }
 
 #network.disconnected {
+    color: @red;
+}
+
+#custom-vpn.connected {
+    color: @grn;
+}
+
+#custom-vpn.disconnected,
+#custom-vpn.unknown {
     color: @red;
 }
 
